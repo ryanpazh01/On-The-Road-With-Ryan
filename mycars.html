@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Verdana, Arial, sans-serif;
+      background-color: #eef2f5;
+      color: #111111;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #1c355e;
+    }
+
+    .topnav a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .topnav a:hover {
+      background-color: #00a3e0;
+      color: white;
+    }
+
+    .topnav a.active {
+      background-color: #e7222e;
+      color: white;
+    }
+
+    .header {
+      background-color: white;
+      text-align: center;
+      padding: 35px 15px 25px 15px;
+      border-bottom: 5px solid #00a3e0;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 38px;
+      color: #1c355e;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px 15px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 22px;
+      margin-bottom: 18px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #e7222e;
+      font-size: 28px;
+    }
+
+    .car-image {
+      width: 100%;
+      max-width: 520px;
+      height: auto;
+      display: block;
+      margin: 18px auto 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .post-meta {
+      color: #555555;
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+
+    .add-button {
+      display: inline-block;
+      background-color: #1c355e;
+      color: white;
+      padding: 12px 18px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+    .add-button:hover {
+      background-color: #00a3e0;
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer {
+      background-color: black;
+      text-align: center;
+      padding: 15px;
+      color: white;
+    }
+
+    .footer a {
+      color: #00a3e0;
+      text-decoration: none;
+    }
+
+    @media only screen and (max-width: 900px) {
+      .car-image {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a class="active" href="mycars.html">My Cars</a>
+    <a href="motorcycles.html">Motorcycles</a>
+    <a href="carnews.html">Car News</a>
+    <a href="communityposts.html">Community Posts</a>
+  </div>
+
+  <div class="header">
+    <h1>My Cars</h1>
+  </div>
+
+  <div class="container">
+
+    <a href="#" class="add-button">+ Add Another Post</a>
+
+    <div class="card">
+      <h2>My Current Build: BMW 440i xDrive</h2>
+
+      <img
+        src="https://images.customwheeloffset.com/web/2285990-1-2017-440i-xdrive-bmw-base-kw-coilovers-rotiform-r134-black.jpg"
+        alt="BMW 440i xDrive"
+        class="car-image"
+      >
+
+      <p class="post-meta"><strong>Posted by Ryan</strong> | My Cars</p>
+
+      <p>
+        This is the current vehicle I own and am actively working on.
+        I worked my way up from an old Nissan Rogue and love this car. I have plenty of plans for mods and upgrades for it while I try to enjoy it for a long time to come.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Next Car on the List:</h2>
+
+      <img
+        src="https://acko-cms.ackoassets.com/BMW_M4_CS_Track_532afe333f.jpg"
+        alt="BMW M4 Competition"
+        class="car-image"
+      >
+
+      <p class="post-meta"><strong>Posted by Ryan</strong> | My Cars</p>
+
+      <p>
+        As you can probably tell, I am a big fan of the BMW brand,
+        but even more so, I can't wait to eventually get my dream car: 
+        a BMW M4 Competition. I have been a big fan of these cars ever since they came out - the power, the styling, and the mod-ability all have drawn me so much towards eventually getting this car one day.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>
+      Author: Ryan Pazhayattil<br>
+      <a href="mailto:rbp210001@utdallas.edu">rbp210001@utdallas.edu</a>
+    </p>
+  </div>
+
+</body>
+</html>

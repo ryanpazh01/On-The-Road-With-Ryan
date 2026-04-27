@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan's Car and Motorcycle Blog</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Verdana, Arial, sans-serif;
+      background-color: #eef2f5;
+      color: #111111;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #1c355e;
+    }
+
+    .topnav a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .topnav a:hover {
+      background-color: #00a3e0;
+      color: white;
+    }
+
+    .topnav a.active {
+      background-color: #e7222e;
+      color: white;
+    }
+
+    .header {
+      background-color: white;
+      text-align: center;
+      padding: 35px 15px 25px 15px;
+      border-bottom: 5px solid #00a3e0;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 38px;
+      color: #1c355e;
+    }
+
+    .header p {
+      font-size: 16px;
+      margin-top: 10px;
+      color: #444444;
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 15px;
+      overflow: auto;
+    }
+
+    .left {
+      float: left;
+      width: 23%;
+    }
+
+    .left a {
+      background-color: white;
+      color: #1c355e;
+      padding: 12px;
+      margin-bottom: 10px;
+      display: block;
+      text-decoration: none;
+      border-left: 5px solid #00a3e0;
+      font-weight: bold;
+    }
+
+    .left a:hover {
+      background-color: #e8f7fd;
+    }
+
+    .middle {
+      float: left;
+      width: 52%;
+      padding: 0 18px;
+    }
+
+    .right {
+      float: left;
+      width: 25%;
+    }
+
+    .card {
+      background-color: white;
+      padding: 22px;
+      margin-bottom: 18px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #1c355e;
+    }
+
+    .card h3 {
+      color: #e7222e;
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+
+    .post-title {
+      display: inline-block;
+      margin: 0 0 16px 0;
+      padding: 6px 14px;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #1c355e;
+      background-color: #edf3f8;
+      border: 1px solid #d4e0ea;
+      border-radius: 999px;
+    }
+
+    .feature-image {
+      width: 100%;
+      max-width: 460px;
+      height: auto;
+      display: block;
+      margin: 18px auto 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .post-meta {
+      color: #555555;
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+
+    .video-box {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 18px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .video-box iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      border: none;
+    }
+
+    .about-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .about-box h2 {
+      margin-top: 0;
+      color: #1c355e;
+    }
+
+    .sections {
+      background-color: #1c355e;
+      color: white;
+      max-width: 1200px;
+      margin: 0 auto 20px auto;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .sections h2 {
+      margin-top: 0;
+    }
+
+    .sections p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .footer {
+      background-color: black;
+      text-align: center;
+      padding: 15px;
+      color: white;
+    }
+
+    .footer a {
+      color: #00a3e0;
+      text-decoration: none;
+    }
+
+    @media only screen and (max-width: 900px) {
+      .left, .middle, .right {
+        width: 100%;
+        padding: 0;
+      }
+
+      .middle {
+        margin-top: 15px;
+      }
+
+      .right {
+        margin-top: 15px;
+      }
+
+      .video-box iframe {
+        height: 260px;
+      }
+
+      .feature-image {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="mycars.html">My Cars</a>
+    <a href="motorcycles.html">Motorcycles</a>
+    <a href="carnews.html">Car News</a>
+    <a href="communityposts.html">Community Posts</a>
+  </div>
+
+  <div class="header">
+    <h1>On The Road with Ryan!</h1>
+    <p>Follow my ownership journey, mods, news, and feel free to weigh in with community discussion.</p>
+  </div>
+
+  <div class="container">
+    <div class="left">
+      <a href="index.html">Latest Posts</a>
+      <a href="mycars.html">Car Modifications</a>
+      <a href="motorcycles.html">Bike Posts</a>
+      <a href="carnews.html">Industry News</a>
+      <a href="communityposts.html">User Discussions</a>
+    </div>
+
+    <div class="middle">
+      <div class="card">
+        <div class="post-title">Latest Post</div>
+        <h3>Welcome to My Garage Journal</h3>
+
+        <img
+          src="https://images.customwheeloffset.com/web/2285990-1-2017-440i-xdrive-bmw-base-kw-coilovers-rotiform-r134-black.jpg"
+          alt="Red BMW 440i xDrive"
+          class="feature-image"
+        >
+
+        <p class="post-meta"><strong>Posted by Ryan</strong> | Cars, Bikes, and Community Content</p>
+
+        <p>
+          This site highlights my personal experience owning, maintaining, and modifying cars and motorcycles.
+          Visitors can explore vehicle updates, browse car and motorcycle news, and join a discussion-based
+          community section where others can share their own posts.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Example Post: First Mod Rundown</h3>
+        <p>
+          In this section, users can view mod lists, before-and-after updates, install notes, and ownership reviews.
+        </p>
+      </div>
+
+      <div class="video-box">
+        <h3>Featured Video</h3>
+        <p>The new AMG CLE63 has been garnering a lot of attention recently!</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/V7wGbUAiOkI?si=7V2ClCC4Y27L0bjD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="about-box">
+        <h2>About the Website</h2>
+        <p>
+          This website was designed as a personal automotive blog with room for future community growth.
+        </p>
+        <p>
+          It is a place where I can document my own automotive journey with posts and updates about what I do to my car and motorcycle,
+          while also allowing others to share their own experiences.
+        </p>
+        <p><strong>Featured Build:</strong> 2017 BMW 440i xDrive</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sections">
+    <h2>Website Sections</h2>
+    <p><span class="glyphicon glyphicon-ok"></span> Personal car ownership journey</p>
+    <p><span class="glyphicon glyphicon-ok"></span> Motorcycle posts and ride updates</p>
+    <p><span class="glyphicon glyphicon-ok"></span> Car news and industry highlights</p>
+    <p><span class="glyphicon glyphicon-ok"></span> Community-submitted discussions</p>
+  </div>
+
+  <div class="footer">
+    <p>
+      Author: Ryan Pazhayattil<br>
+      <a href="mailto:rbp210001@utdallas.edu">rbp210001@utdallas.edu</a>
+    </p>
+  </div>
+
+</body>
+</html>
