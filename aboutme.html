@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Verdana, Arial, sans-serif;
+      background-color: #eef2f5;
+      color: #111111;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #1c355e;
+    }
+
+    .topnav a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .topnav a:hover {
+      background-color: #00a3e0;
+      color: white;
+    }
+
+    .topnav a.active {
+      background-color: #e7222e;
+      color: white;
+    }
+
+    .header {
+      background-color: white;
+      text-align: center;
+      padding: 35px 15px 25px 15px;
+      border-bottom: 5px solid #00a3e0;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 38px;
+      color: #1c355e;
+    }
+
+    .header p {
+      font-size: 15px;
+      margin-top: 10px;
+      color: #444444;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px 15px;
+    }
+
+    .about-card {
+      background-color: white;
+      padding: 26px;
+      margin-bottom: 18px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+      overflow: auto;
+    }
+
+    .profile-image {
+      width: 100%;
+      max-width: 320px;
+      height: 360px;
+      display: block;
+      margin: 0 auto 22px auto;
+      border-radius: 12px;
+      border: 2px dashed #999999;
+      background-color: #dddddd;
+      object-fit: cover;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .about-card h2 {
+      margin-top: 0;
+      color: #e7222e;
+      font-size: 28px;
+    }
+
+    .about-card p {
+      font-size: 14px;
+      line-height: 1.55;
+      margin-bottom: 14px;
+    }
+
+    .about-label {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 6px 14px;
+      background-color: #edf3f8;
+      color: #1c355e;
+      border: 1px solid #d4e0ea;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .contact-button {
+      display: inline-block;
+      background-color: #1c355e;
+      color: white;
+      padding: 12px 18px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .contact-button:hover {
+      background-color: #00a3e0;
+      color: white;
+      text-decoration: none;
+    }
+
+    .info-box {
+      background-color: #f6f9fc;
+      border-left: 5px solid #00a3e0;
+      padding: 14px 16px;
+      margin-top: 18px;
+      border-radius: 8px;
+    }
+
+    .footer {
+      background-color: black;
+      text-align: center;
+      padding: 15px;
+      color: white;
+      margin-top: 25px;
+    }
+
+    .footer a {
+      color: #00a3e0;
+      text-decoration: none;
+    }
+
+    @media only screen and (max-width: 900px) {
+      .topnav a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .profile-image {
+        max-width: 100%;
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="mycars.html">My Cars</a>
+    <a href="motorcycles.html">Motorcycles</a>
+    <a href="dreamgarage.html">Dream Garage</a>
+    <a href="featuredbuilds.html">Featured Builds</a>
+    <a href="carnews.html">Car News</a>
+    <a href="paintwraps.html">Paint & Wraps</a>
+    <a href="communityposts.html">Community Posts</a>
+    <a class="active" href="aboutme.html">About Me</a>
+  </div>
+
+  <div class="header">
+    <h1>About Me</h1>
+    <p>Learn more about the person behind the blog!</p>
+  </div>
+
+  <div class="container">
+
+    <div class="about-card">
+      <div class="about-label">About the Author</div>
+
+      <h2>Hi, I'm Ryan</h2>
+
+      <img
+        src="Me selfie.webp"
+        alt="Photo of Ryan"
+        class="profile-image"
+      >
+
+      <p>
+        Hello to all who visited my site! First of all, I want to thank you for taking the time to go through and check out my site. It was and is a lot of work as I continue to update this site and keep it in the archives of project work that I can use to reference in the future, but I hope you were able to enjoy, appreciate or learn something from the site. I am a big fan of cars and bikes and the automotive industry as a whole so working on something like this, although a bit strenous, became a bit of a passion project for me.
+      </p>
+
+      <p>
+        I wanted to make this website not just for the class projects I intended to use it for but to further document my growth as a student here at UTD with all the skills I have been picking up in my classes and being able to apply it to something I am more personally interested in. I hope to continue to add posts about my own vehicles and others as well as talk about more auto news as I (hopefully) continously build and upgrade this site as time goes on. Thank you again for taking the time to visit my site and contact me using the button below if there are any concerns, questions, or if you feel like saying hi!
+      </p>
+
+      <div class="info-box">
+        <p>
+          <strong>Website Focus:</strong> Cars, motorcycles, builds, paint ideas, wraps, news, and community discussion.
+        </p>
+        <p>
+          <strong>Current Personal Build(s):</strong> 2017 BMW 440i xDrive
+        </p>
+      </div>
+
+      <a href="mailto:rbp210001@utdallas.edu" class="contact-button">Contact Me</a>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>
+      Author: Ryan Pazhayattil<br>
+      <a href="mailto:rbp210001@utdallas.edu">rbp210001@utdallas.edu</a>
+    </p>
+  </div>
+
+</body>
+</html>

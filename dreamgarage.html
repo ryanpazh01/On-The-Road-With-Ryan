@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Garage</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Verdana, Arial, sans-serif;
+      background-color: #eef2f5;
+      color: #111111;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #1c355e;
+    }
+
+    .topnav a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .topnav a:hover {
+      background-color: #00a3e0;
+      color: white;
+    }
+
+    .topnav a.active {
+      background-color: #e7222e;
+      color: white;
+    }
+
+    .header {
+      background-color: white;
+      text-align: center;
+      padding: 35px 15px 25px 15px;
+      border-bottom: 5px solid #00a3e0;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 38px;
+      color: #1c355e;
+    }
+
+    .header p {
+      font-size: 15px;
+      margin-top: 10px;
+      color: #444444;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 20px 15px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 22px;
+      margin-bottom: 18px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #e7222e;
+      font-size: 27px;
+    }
+
+    .disclaimer-card {
+      border-left: 6px solid #00a3e0;
+      padding: 18px 22px;
+    }
+
+    .disclaimer-card h2 {
+      color: #1c355e;
+      font-size: 23px;
+    }
+
+    .garage-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .dream-card {
+      margin-bottom: 0;
+    }
+
+    .dream-image {
+      width: 100%;
+      height: 260px;
+      display: block;
+      margin: 16px auto 18px auto;
+      border-radius: 12px;
+      border: 2px dashed #999999;
+      background-color: #dddddd;
+      object-fit: cover;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .post-meta {
+      color: #555555;
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+
+    .card p {
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .garage-label {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 6px 14px;
+      background-color: #edf3f8;
+      color: #1c355e;
+      border: 1px solid #d4e0ea;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .footer {
+      background-color: black;
+      text-align: center;
+      padding: 15px;
+      color: white;
+      margin-top: 25px;
+    }
+
+    .footer a {
+      color: #00a3e0;
+      text-decoration: none;
+    }
+
+    @media only screen and (max-width: 900px) {
+      .topnav a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .garage-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .dream-image {
+        height: 240px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="mycars.html">My Cars</a>
+    <a href="motorcycles.html">Motorcycles</a>
+    <a class="active" href="dreamgarage.html">Dream Garage</a>
+    <a href="featuredbuilds.html">Featured Builds</a>
+    <a href="carnews.html">Car News</a>
+    <a href="paintwraps.html">Paint & Wraps</a>
+    <a href="communityposts.html">Community Posts</a>
+    <a href="aboutme.html">About Me</a>
+  </div>
+
+  <div class="header">
+    <h1>Dream Garage</h1>
+    <p>A collection of cars and motorcycles I would love to own in the future.</p>
+  </div>
+
+  <div class="container">
+
+    <div class="card disclaimer-card">
+      <h2>Disclaimer:</h2>
+
+      <p class="post-meta"><strong>Posted by Ryan</strong> | Dream Garage</p>
+
+      <p>
+        I want to emphasize that this is my DREAM garage and it is not necessarily supposed to be realistic. I want to highlight the cars and bikes I would have in my garage if things like money, space, or any other restrictions like those were not a problem. Any comments or opinions can be taken to the Community Posts page where you are welcome to share them in a respectful and cordial format - Otherwise, I would love to hear about your dream garage on that page too!
+      </p>
+    </div>
+
+    <div class="garage-grid">
+
+      <div class="card dream-card">
+        <div class="garage-label">Dream Car #1</div>
+
+        <h2>BMW G82 M4:</h2>
+
+        <img
+          src="https://cdn.bmwblog.com/wp-content/uploads/2021/05/fire_orange_BMW_M4_M_Performance_Parts_02-scaled.jpg"
+          alt="Dream car image"
+          class="dream-image"
+        >
+
+        <p class="post-meta"><strong>Posted by Ryan</strong> | Dream Garage</p>
+
+        <p>
+          Have loved this car since the day it came out and love this special individual color it has: Fire Orange.
+        </p>
+      </div>
+
+      <div class="card dream-card">
+        <div class="garage-label">Dream Car #2</div>
+
+        <h2> R35 Nissan GT-R:</h2>
+
+        <img
+          src="https://www.topgear.com/sites/default/files/images/cars-road-test/2025/04/7a8ed341f6e97990e3b980a13a85ea55/DSC_2857-Edit-2.jpg"
+          alt="Dream car image"
+          class="dream-image"
+        >
+
+        <p class="post-meta"><strong>Posted by Ryan</strong> | Dream Garage</p>
+
+        <p>
+          Fell in love with this car ever since I saw the Fast and Furious movies and a plethora of JDM enthusiasts praise it for its power, modability, and heritage.
+        </p>
+      </div>
+
+      <div class="card dream-card">
+        <div class="garage-label">Dream Car #3</div>
+
+        <h2>Mercedes-Maybach GLS 600:</h2>
+
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/2025-mercedes-maybach-gls-600-173-684896b713d86.jpg?crop=0.692xw:0.587xh;0.119xw,0.154xh&resize=2048:*"
+          alt="Dream car image"
+          class="dream-image"
+        >
+
+        <p class="post-meta"><strong>Posted by Ryan</strong> | Dream Garage</p>
+
+        <p>
+          Nothing screams class to me more than this car plus...everybody should have an SUV too right?.
+        </p>
+      </div>
+
+      <div class="card dream-card">
+        <div class="garage-label">Dream Car #4</div>
+
+        <h2> Toyota 4Runner TRD:</h2>
+
+        <img
+          src="https://trail4runner.com/wp-content/uploads/2022/07/FF-TRD_OR21.jpg"
+          alt="Dream motorcycle image"
+          class="dream-image"
+        >
+
+        <p class="post-meta"><strong>Posted by Ryan</strong> | Dream Garage</p>
+
+        <p>
+          I am also an avid nature enthusiast and love to go camping and such - an overlanding machine like this would really help me enjoy trips like that on another level.
+        </p>
+      </div>
+
+      <div class="card dream-card">
+        <div class="garage-label">Dream Car #5</div>
+
+        <h2>R31 Nissan GT-R:</h2>
+
+        <img
+          src="https://i.redd.it/654ym60mtrb01.jpg"
+          alt="Dream motorcycle image"
+          class="dream-image"
+        >
+
+        <p class="post-meta"><strong>Posted by Ryan</strong> | Dream Garage</p>
+
+        <p>
+          While learning about the history of the R35, I came across this generation of the GT-R and realized that I would love to own this one day as a project car that I could work on when I have the spare time and also modify into a JDM-style drift car.
+        </p>
+      </div>
+
+      <div class="card dream-card">
+        <div class="garage-label">Dream Bike </div>
+
+        <h2>BMW S1000 RR:</h2>
+
+        <img
+          src="https://www.cycleworld.com/resizer/habncXl5xZ5-PSrszyGjOPq25vA=/616x0/smart/cloudfront-us-east-1.images.arcpublishing.com/octane/A25E4DK5IK3A6VDPETJHSSMHXY.jpg"
+          alt="Dream motorcycle image"
+          class="dream-image"
+        >
+
+        <p class="post-meta"><strong>Posted by Ryan</strong> | Dream Garage</p>
+
+        <p>
+          In addition to the Aprilia RS660 or whatever bike I get to start with as we talked about before, I plan to eventually get my dream bike and continue the BMW pattern to the bike side too (haha).
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>
+      Author: Ryan Pazhayattil<br>
+      <a href="mailto:rbp210001@utdallas.edu">rbp210001@utdallas.edu</a>
+    </p>
+  </div>
+
+</body>
+</html>
